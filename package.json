@@ -1,0 +1,29 @@
+{
+  "name": "simple-consul",
+  "version": "0.0.1",
+  "description": "Simple consul aims to simplify the consul experience on node",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run build && concurrently --kill-others \"tsc -w\" \"nodemon dist/index.js\"",
+    "build": "rm -rf dist && mkdir dist && tsc",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klyve/simple-consul.git"
+  },
+  "author": "Bjarte Klyve Larsen",
+  "license": "ISC",
+  "dependencies": {
+    "consul": "^0.34.1"
+  },
+  "devDependencies": {
+    "@types/consul": "^0.23.33",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.5.2"
+  }
+}
