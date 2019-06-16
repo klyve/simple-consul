@@ -57,12 +57,3 @@ class SimpleConsul {
     }
 }
 exports.default = (config) => new SimpleConsul(config);
-// Spec
-const c = new SimpleConsul({
-    host: "localhost",
-    name: "Bjartes test"
-});
-c.kv
-    .get(["google", "linkedin"], "OAuth")
-    .then(console.log)
-    .catch(console.error);

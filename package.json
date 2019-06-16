@@ -1,9 +1,9 @@
 {
   "name": "simple-consul",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple consul aims to simplify the consul experience on node",
   "main": "dist/index.js",
-  "types" : "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm run build && concurrently --kill-others \"tsc -w\" \"nodemon dist/index.js\"",
